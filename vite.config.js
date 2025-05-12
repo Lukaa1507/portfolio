@@ -4,4 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  base: '/portfolio/',  // Adjust based on your GitHub repo name
+  build: {
+    outDir: 'dist',
+  },
+});
